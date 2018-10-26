@@ -6,6 +6,7 @@ import com.example.demo.Enm.OrderState;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+import java.util.Date;
 
 public class OrderInfo implements Serializable {
 
@@ -13,8 +14,8 @@ public class OrderInfo implements Serializable {
     private Integer productId;
     private Integer accountId;
     private OrderState state;
-    private Timestamp createDate;
-    private Timestamp updateDate;
+    private Date createDate;
+    private Date updateDate;
     private BigDecimal payment;
     private String remark;
     private Integer count;
@@ -64,19 +65,19 @@ public class OrderInfo implements Serializable {
         this.state = state;
     }
 
-    public Timestamp getCreateDate() {
+    public Date getCreateDate() {
         return createDate;
     }
 
-    public void setCreateDate(Timestamp createDate) {
+    public void setCreateDate(Date createDate) {
         this.createDate = createDate;
     }
 
-    public Timestamp getUpdateDate() {
+    public Date getUpdateDate() {
         return updateDate;
     }
 
-    public void setUpdateDate(Timestamp updateDate) {
+    public void setUpdateDate(Date updateDate) {
         this.updateDate = updateDate;
     }
 

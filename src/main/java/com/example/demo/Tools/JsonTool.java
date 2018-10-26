@@ -19,5 +19,10 @@ public class JsonTool {
         return responseInfo;
     }
 
+    ///序列化业务对象。
+    public static String SerializeInfo(Object Info) {
+        JSONObject json = JSONObject.fromObject(Info);
+        return json.toString();
+    }
 
 }
